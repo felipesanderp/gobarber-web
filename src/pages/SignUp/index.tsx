@@ -3,6 +3,7 @@ import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
@@ -62,10 +63,10 @@ const SignUp: React.FC = () => {
           <a href="forgot">Esqueci minha Senha</a>
         </Form>
 
-        <a href="login">
+        <Link to="/">
           <FiArrowLeft />
           Voltar para Logon
-        </a>
+        </Link>
       </Content>
     </Container>
   );
